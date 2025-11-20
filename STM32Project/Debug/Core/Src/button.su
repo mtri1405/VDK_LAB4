@@ -1,0 +1,5 @@
+button.c:19:5:isButtonPress	16	static
+button.c:27:5:isModePress	8	static
+button.c:28:5:isTimePress	8	static
+button.c:29:5:isSetPress	8	static
+button.c:31:6:getKeyInput	16	static

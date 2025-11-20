@@ -1,0 +1,3 @@
+7_SEGMENT.c:31:6:display7SEG	24	static
+7_SEGMENT.c:42:6:set7SEGValues	16	static
+7_SEGMENT.c:47:6:update7SEG	24	static

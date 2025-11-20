@@ -1,0 +1,10 @@
+led.c:4:6:init_traffic_lights	8	static
+led.c:8:6:turn_off_all	8	static
+led.c:19:6:setTrafficRedGreen	8	static
+led.c:24:6:setTrafficRedAmber	8	static
+led.c:29:6:setTrafficGreenRed	8	static
+led.c:34:6:setTrafficAmberRed	8	static
+led.c:41:6:blink_Red	8	static
+led.c:45:6:blink_Green	8	static
+led.c:49:6:blink_Amber	8	static
+led.c:54:6:SYS_LED_Blinky	8	static
