@@ -19,6 +19,7 @@ void init_fsm_auto() {
 }
 
 void fsm_auto_run() {
+    if (mode != AUTO) return; // Chỉ chạy trong Auto
     // 1. Xử lý đếm ngược thời gian
     if (timer_flag[TIMER_TRAFFIC] == 1) {
         setTimer(TIMER_TRAFFIC, 1000); // Reset timer 1s
@@ -68,7 +69,7 @@ void fsm_auto_run() {
 
     // 4. Kiểm tra nút nhấn để chuyển sang Manual
     if (isModePress()) {
-        STATUS = MAN_RED;
+        mode = MAN_RED;
         init_fsm_manual(); // Khởi tạo manual mode cho RED
     }
 }

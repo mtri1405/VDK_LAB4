@@ -93,11 +93,13 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+    init_fsm_auto();
   	SCH_Add_Task(timerRun, 0, 1);	// Update timer per 10ms
-  	SCH_Add_Task(getKeyInput, 1, 1); // Read putton per 10ms
-  	SCH_Add_Task(run, 2, 1);
-  	SCH_Add_Task(update7SEG, 3, 4); // Tick scheduler là 10ms -> period 2 = 200ms
-  	SCH_Add_Task(SYS_LED_Blinky, 3, 100); // BLINK PA05 per 1s
+  	SCH_Add_Task(getKeyInput, 0, 1); // Read putton per 10ms
+  	SCH_Add_Task(fsm_manual_run, 0, 1);
+    SCH_Add_Task(fsm_auto_run, 0, 1);
+  	SCH_Add_Task(update7SEG, 0, 25);
+  	SCH_Add_Task(SYS_LED_Blinky, 0, 100); // BLINK PA05 per 1s
 
 	HAL_TIM_Base_Start_IT(&htim2);
 	while (1) {

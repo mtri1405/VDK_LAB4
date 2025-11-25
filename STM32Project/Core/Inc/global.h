@@ -24,7 +24,7 @@
 #define AMBER_IDX   2
 
 // --- Biến toàn cục ---
-extern int STATUS;
+extern int mode;
 extern int TrafficTimer[3]; // Thời gian gốc: RED, GREEN, AMBER
 
 // Hàm điều phối chính
